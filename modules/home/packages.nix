@@ -11,6 +11,7 @@
         xmobar
         xsecurelock
         direnv
+	devenv
         firefox
       ];
     };
