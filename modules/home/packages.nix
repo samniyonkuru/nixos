@@ -7,11 +7,12 @@
       home.packages = with pkgs; [
         ripgrep
         fd
+        tree
         brightnessctl
         xmobar
         xsecurelock
         direnv
-	devenv
+        devenv
         firefox
       ];
     };

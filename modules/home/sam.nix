@@ -6,6 +6,7 @@
     {
       imports = [
         config.flake.homeModules.packages
+        config.flake.homeModules.bash
         config.flake.homeModules.git
         config.flake.homeModules.tmux
         config.flake.homeModules.neovim
