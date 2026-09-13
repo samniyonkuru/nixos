@@ -5,7 +5,7 @@
     { pkgs, ... }:
     {
       home.packages = with pkgs; [
-	xclip
+        xclip
         tree
         brightnessctl
         xmobar
@@ -13,6 +13,7 @@
         direnv
         devenv
         firefox
+        flameshot
       ];
     };
 }

@@ -6,11 +6,11 @@
     {
       imports = [
         config.flake.homeModules.packages
-        config.flake.homeModules.bash
+        config.flake.homeModules.zsh
         config.flake.homeModules.git
         config.flake.homeModules.tmux
         config.flake.homeModules.neovim
-        config.flake.homeModules.alacritty
+        config.flake.homeModules.kitty
       ];
 
       home.username = "sam";
