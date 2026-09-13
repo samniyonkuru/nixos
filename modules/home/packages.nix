@@ -1,4 +1,4 @@
-{ ... }:
+{ inputs, ... }:
 
 {
   flake.homeModules.packages =
@@ -11,7 +11,7 @@
         xmobar
         xsecurelock
         direnv
-        devenv
+        inputs.devenv.packages.${pkgs.system}.devenv
         firefox
         flameshot
       ];

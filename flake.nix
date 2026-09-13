@@ -8,6 +8,8 @@
 
     import-tree.url = "github:vic/import-tree";
 
+    devenv.url = "github:cachix/devenv/v2.3.1";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";

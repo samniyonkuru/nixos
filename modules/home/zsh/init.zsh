@@ -11,6 +11,7 @@ source <(carapace _carapace)
 
 # Case-insensitive completion
 setopt NO_CASE_GLOB
+eval "$(devenv hook zsh)"
 
 zstyle ':completion:*' matcher-list \
   'm:{[:lower:]}={[:upper:]}' \
@@ -19,9 +20,6 @@ zstyle ':completion:*' matcher-list \
 
 # FZF
 source <(fzf --zsh)
-
-# Devenv
-eval "$(devenv hook zsh)"
 
 # nix-shell -> zsh
 any-nix-shell zsh --info-right | source /dev/stdin
