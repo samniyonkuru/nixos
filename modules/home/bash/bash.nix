@@ -10,6 +10,7 @@
         shellAliases = {
           gt = "tree --gitignore";
           n = "nvim";
+	  copy="xclip -selection clipboard";
         };
 
         initExtra = ''

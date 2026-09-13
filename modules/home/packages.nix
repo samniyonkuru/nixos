@@ -5,8 +5,7 @@
     { pkgs, ... }:
     {
       home.packages = with pkgs; [
-        ripgrep
-        fd
+	xclip
         tree
         brightnessctl
         xmobar

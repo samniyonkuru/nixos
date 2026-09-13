@@ -24,7 +24,6 @@
         extraConfig = ''
           set -g status-position top
           set -g status-right ""
-          set -g @tmux-gruvbox 'dark'
           '';
       };
     };

@@ -7,18 +7,17 @@ vim.o.shiftwidth = 2
 vim.g.mapleader = " "
 vim.opt.clipboard = "unnamedplus"
 
--- colors
-vim.cmd("colorscheme gruvbox")
-
 --config
 require('config.keybinds')
-
---plugins
 require('config.plugins')
---
+
 --lsp
 require('lsp.lua')
 require('lsp.haskell')
 require('lsp.elm')
 require('lsp.typescript')
 require('lsp.python')
+
+-- colors
+vim.cmd("colorscheme gruvbox")
+

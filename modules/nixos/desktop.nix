@@ -2,7 +2,7 @@
 
 {
   flake.modules.nixos.desktop =
-    { ... }:
+    { pkgs, ... }:
     {
       services.xserver = {
         enable = true;
@@ -12,6 +12,7 @@
         windowManager.xmonad = {
           enable = true;
           enableContribAndExtras = true;
+
         };
 
         displayManager.sessionCommands = ''
@@ -25,9 +26,5 @@
           fi
         '';
       };
-
-      services.pulseaudio.enable = false;
-
-      security.pam.services.i3lock = {};
     };
 }
