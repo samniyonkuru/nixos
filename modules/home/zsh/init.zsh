@@ -11,6 +11,8 @@ source <(carapace _carapace)
 
 # Case-insensitive completion
 setopt NO_CASE_GLOB
+
+# Devenv
 eval "$(devenv hook zsh)"
 
 zstyle ':completion:*' matcher-list \
@@ -23,3 +25,8 @@ source <(fzf --zsh)
 
 # nix-shell -> zsh
 any-nix-shell zsh --info-right | source /dev/stdin
+#
+# Automatically start/attach tmux
+if [[ -z "$TMUX" && -n "$PS1" ]]; then
+  tmux new-session -A -s main
+fi
